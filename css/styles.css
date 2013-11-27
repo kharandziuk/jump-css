@@ -1,0 +1,42 @@
+a:link, a:visited {
+}
+
+a:hover {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+body > header {
+}
+
+  nav ul {
+  }
+
+.promo {
+}
+
+.main {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+  .latest {
+    width: 640px;
+    float: left;
+  }
+
+    .media {
+    }
+      .media img {
+      }
+  .sidebar {
+    width: 360;
+    float: right;
+  }
+
+footer {
+}
