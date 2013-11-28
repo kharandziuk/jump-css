@@ -6,7 +6,7 @@ app.configure( ()->
     app.set('view engine', 'html')
     app.engine('.html', require('hbs').__express)
     app.set('views', "#{__dirname}/views")
-    app.use(express.static('/public'))
+    app.use('/static', express.static("#{__dirname}/public"))
 )
 
 app.get('/', (request, response)->

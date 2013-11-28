@@ -1,3 +1,17 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
 a:link, a:visited {
 }
 
@@ -22,6 +36,8 @@ body > header {
 .main {
   width: 1020px;
   margin: 0 auto;
+  outline: solid 1px red;
+  background: green;
 }
 
   .latest {
@@ -34,9 +50,12 @@ body > header {
       .media img {
       }
   .sidebar {
-    width: 360;
+    width: 360px;
     float: right;
   }
+    .tweet {
+        width: 100%;
+    }
 
 footer {
 }
