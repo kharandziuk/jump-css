@@ -12,10 +12,21 @@
     *zoom: 1;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 a:link, a:visited {
 }
 
 a:hover {
+}
+
+.center-global {
+  width: 1020px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -33,16 +44,11 @@ body > header {
 .promo {
 }
 
-.main {
-  width: 1020px;
-  margin: 0 auto;
-  outline: solid 1px red;
-  background: green;
-}
 
   .latest {
     width: 640px;
     float: left;
+    padding: 0 40px;
   }
 
     .media {
@@ -54,8 +60,15 @@ body > header {
     float: right;
   }
     .tweet {
-        width: 100%;
+        padding-left: 55px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .tweet:before {
+        content: url('/static/img/twitter-icon.png');
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 4px;
     }
 
-footer {
-}
