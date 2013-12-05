@@ -1,3 +1,36 @@
+@font-face {
+  font-family: LatoReg;
+  src: url('lato-regular-webfont.eot');
+  src: url('lato-regular-webfont.eot#iefix') format ('embeded-opentype'),
+    url('lato-regular-webfont.woff) format ('woff'),
+    url('lato-regular-webfont.ttf) format ('truetype'),
+    url('lato-regular-webfont.svg#latoregular) format ('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url('lato-bol-webfont.eot');
+  src: url('lato-bol-webfont.eot#iefix') format ('embeded-opentype'),
+    url('lato-bol-webfont.woff) format ('woff'),
+    url('lato-bol-webfont.ttf) format ('truetype'),
+    url('lato-bol-webfont.svg#latoregular) format ('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Chelsea;
+  src: url('chelseamarket-regular-webfont.eot');
+  src: url('chelseamarket-regular-webfont.eot#iefix') format ('embeded-opentype'),
+    url('chelseamarket-regular-webfont.woff) format ('woff'),
+    url('chelseamarket-regular-webfont.ttf) format ('truetype'),
+    url('chelseamarket-regular-webfont.svg#latoregular) format ('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .cf:before,
 .cf:after {
     content: " ";
@@ -18,8 +51,19 @@
   box-sizing: border-box;
 }
 
-a:link, a:visited {
+a {
+  text-decoration: none;
+  color: #544a40;
 }
+
+nav a {
+  color: #fefefe;
+}
+
+.tweet a {
+  color: #810430;
+}
+
 
 a:hover {
 }
@@ -29,46 +73,149 @@ a:hover {
   margin: 0 auto;
 }
 
+  nav {
+    float: right;
+    margin-right: 177px;
+    padding-top: 20px;
+  }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+      nav ul li {
+        display: inline-block;
+        *display: inline;
+        margin-right: 30px;
+      } 
+  .promo {
+    position: relative;
+    z-index: 5;
+    padding-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
+  }
+
+  .promo-desc {
+    position: absolute;
+    bottom: 93px;
+    right: 75px;
+    width: 316px;
+  }
+
+    .promo-btn {
+      display: inline-block;
+      width: 208px;
+      padding: 13px 0;
+      background-color: #6c0733;
+      box-shadow: rgba(0, 0, 0, .25) 0 7px 2px 0;
+    }
+
+    .more-btn {
+      text-align: center;
+      float: right;
+      margin-right: 50px;
+      width: 280px;
+    }
+
+
 h1 {
 }
 
 h2 {
 }
 
+body {
+  background: #cab5a3 url(/static/img/bg-main.gif) repeat repeat 0 0;
+  color: #333;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
 body > header {
+  box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
+  position: relative;
+  z-index: 10;
 }
-
-  nav ul {
-  }
-
-.promo {
-}
-
 
   .latest {
     width: 640px;
     float: left;
     padding: 0 40px;
+    background: url(/static/img/bg-column.png) no-repeat top right;
+
   }
 
     .media {
+        clear: left;
+        padding-bottom: 28px;
+        overflow: hidden;
     }
       .media img {
+          float: left;
+          margin-right: 30px;
+          border: solid 9px #ede0d5;
+          box-shadow: rgba(0, 0, 0, .25) 2px 2px 2px 0;
       }
+
   .sidebar {
     width: 360px;
     float: right;
   }
     .tweet {
-        padding-left: 55px;
-        padding-right: 20px;
-        position: relative;
+      padding-left: 55px;
+      padding-right: 20px;
+      position: relative;
     }
+
+    .tweet .date {
+      color: #8f7e6d;
+    }
+
     .tweet:before {
-        content: url('/static/img/twitter-icon.png');
-        display: block;
-        position: absolute;
-        left: 15px;
-        top: 4px;
+      content: url(/static/img/twitter-icon.png);
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 4px;
     }
+
+  .popular {
+    padding-bottom: 40px;
+  }
+
+  .rating {
+    float: left;
+    clear: left;
+    padding-top: 4px;
+    padding-right: 15px;
+    width: 45px;
+  }
+
+  .pop-item {
+    padding-bottom: 20px;
+    float: left;
+    width: 250px;
+  }
+
+footer {
+  background-color: rgba(66, 3, 30, .5) ;
+}
+.footer-inside {
+  padding-left: 40px;
+}
+.footer-1 {
+  float: left;
+  width: 422px;
+}
+
+.footer-2 {
+  float: left;
+  width: 326px;
+}
+
+.footer-3 {
+  float: left;
+  width: 232px;
+}
+
 
