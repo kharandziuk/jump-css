@@ -74,6 +74,15 @@ a:hover {
   margin: 0 auto;
 }
 
+
+.logo {
+    float: left;
+    margin-left: 145px;
+    margin-top: -34px;
+    position: relative;
+    top: 34px;
+}
+
   nav {
     float: right;
     margin-right: 177px;
